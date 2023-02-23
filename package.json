@@ -4,6 +4,15 @@
   "description": "Angular frontend for Conduit",
   "author": "Thinkster",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "start": "npm run build && serve -s dist"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  },
   "dependencies": {
     "angular": "^1.5.0-rc.2",
     "angular-ui-router": "^0.4.2",
@@ -12,6 +21,7 @@
     "browser-sync": "^2.11.1",
     "browserify": "^13.0.0",
     "browserify-ngannotate": "^2.0.0",
+    "cypress": "^12.6.0",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.8.0",
     "gulp-notify": "^2.2.0",
@@ -20,6 +30,7 @@
     "gulp-util": "^3.0.7",
     "marked": "^0.3.5",
     "merge-stream": "^1.0.0",
+    "typescript": "^4.9.5",
     "vinyl-source-stream": "^1.1.0"
   }
 }
