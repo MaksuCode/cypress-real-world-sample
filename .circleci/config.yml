@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm install -g gulp
-      - run: gulp -d
+      - run: gulp build
       - run: npx cypress run
 
 workflows:
