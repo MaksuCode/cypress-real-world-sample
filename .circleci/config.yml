@@ -7,8 +7,9 @@ jobs:
     - checkout
     - run: npm install
     - run: npm install -g gulp
-    - run: gulp build
+    - run:
         name: Build application
+        command: gulp build
         background: true
     - run: npx cypress run
 workflows:
