@@ -8,8 +8,8 @@ jobs:
     - run: npm install
     - run: npm install -g gulp
     - run: gulp build
-      name: Build application
-      background: true
+        name: Build application
+        background: true
     - run: npx cypress run
 workflows:
   version: 2
